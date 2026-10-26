@@ -1,6 +1,4 @@
-def main():
-    print("Hello from langchain-multi-agent-research-syatem!")
+from src.tools.tools import web_search, scrape_url
 
-
-if __name__ == "__main__":
-    main()
+output = scrape_url.invoke("https://en.wikipedia.org/wiki/France")
+print(output)
