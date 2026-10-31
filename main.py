@@ -1,4 +1,5 @@
-from src.tools.tools import web_search, scrape_url
+from src.pipelines.pipelines import run_research_pipeline
 
-output = scrape_url.invoke("https://en.wikipedia.org/wiki/France")
-print(output)
+topic = "The impact of artificial intelligence on the job market in 2026"
+
+run_research_pipeline(topic)
